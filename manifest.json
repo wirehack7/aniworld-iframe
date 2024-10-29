@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Aniworld Iframe SRC Viewer",
+    "version": "0.1",
+    "description": "Shows src of iframe",
+    "permissions": ["scripting"],
+    "content_scripts": [
+      {
+        "matches": ["https://aniworld.to/*"],
+        "js": ["content.js"],
+        "css": ["styles.css"]
+      }
+    ]
+}
